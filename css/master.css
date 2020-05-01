@@ -5,17 +5,17 @@ html {
     background: #eee;
 }
 
-body {
+#slickQuiz {
     width: 800px;
-    margin: 0 auto;
-    border: 2px solid #ccc;
-    border-top: none;
-    background: #fff;
+    margin: auto;
+    border: 2px solid #6c757d;
+    background: #212529;
     padding: 20px;
     font-family: Trebuchet, Arial,Helvetica,sans-serif;
     font-size: 16px;
-    color: #353535;
+    color: #ffffff;
     line-height: 1.5em;
+    padding-top: 85px;
 }
 
 h1,h2,h3,h4,h5,h6 {font-weight: bold;}
@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: bold;}
 h1 {
     font-size: 26px;
     margin: 0 0 20px;
-    color: #0C4569;
+    color: #e9ecef;
 }
 h2 {
     font-size: 22px;
@@ -56,9 +56,9 @@ ol li { list-style-type: decimal; margin-left: 20px; }
     float: left;
     width: auto;
     padding: 5px 15px;
-    color:#ffffff;
-    background-color:darkcyan;
-    border: 1px solid #fff;
+    color:#f8f9fa;
+    background-color:#0062cc;
+    border: 1px solid #dee2e6;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
