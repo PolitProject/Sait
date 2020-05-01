@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Маркетинг</title>
+    <link rel="stylesheet" href="General_files/w3.css">
+    <link href="General_files/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="General_files/font-awesome.css">
+
+    <style>
+        html, body, h1, h2, h3, h4 {
+            font-family: URW Chancery L, cursive;
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        .w3-tag, .fa {
+            cursor: pointer
+        }
+
+        .w3-tag {
+            height: 15px;
+            width: 15px;
+            padding: 0;
+            margin-top: 6px
+        }
+    </style>
+</head>
+<body>
+
+<div class="w3-top">
+    <div class="w3-row w3-large w3-light-grey">
+        <div class="w3-col s3">
+            <a href="#" class="w3-button w3-block">Главная</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#about" class="w3-button w3-block">О Нас</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#contact" class="w3-button w3-block">Контакты</a>
+        </div>
+    </div>
+</div>
+
+<!-- Контент -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+    <div class="w3-panel">
+        <h1><b>Политическая хреновина</b></h1>
+    </div>
+
+    <!-- Slideshow -->
+    <div class="w3-container">
+        <div class="w3-display-container mySlides" style="display: block;">
+            <img src="General_files/coffee.jpg" style="width:100%">
+            <div class="w3-display-topleft w3-container w3-padding-32">
+                <span class="w3-white w3-padding-large w3-animate-bottom">Пройти тестирование по теме "Правители"</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides" style="display: none;">
+            <img src="General_files/workbench.jpg" style="width:100%">
+            <div class="w3-display-middle w3-container w3-padding-32">
+                <span class="w3-white w3-padding-large w3-animate-bottom">Пройти тестирование по теме "Субъекты РФ"</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides" style="display: none;">
+            <img src="General_files/sound.jpg" style="width:100%">
+            <div class="w3-display-topright w3-container w3-padding-32">
+                <span class="w3-white w3-padding-large w3-animate-bottom">Пройти тестирование по теме "Конституция"</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides" style="display: none;">
+            <img src="General_files/workbench.jpg" style="width:100%">
+            <div class="w3-display-middle w3-container w3-padding-32">
+                <span class="w3-white w3-padding-large w3-animate-bottom">Пройти тестирование по теме "Гражданское общество"</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides" style="display: none;">
+            <img src="General_files/workbench.jpg" style="width:100%">
+            <div class="w3-display-middle w3-container w3-padding-32">
+                <span class="w3-white w3-padding-large w3-animate-bottom">Пройти тестирование по теме "Политические режимы"</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides" style="display: none;">
+            <img src="General_files/workbench.jpg" style="width:100%">
+            <div class="w3-display-middle w3-container w3-padding-32">
+                <span class="w3-white w3-padding-large w3-animate-bottom">Пройти тестирование по теме "Форма правления"</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides" style="display: none;">
+            <img src="General_files/workbench.jpg" style="width:100%">
+            <div class="w3-display-middle w3-container w3-padding-32">
+                <span class="w3-white w3-padding-large w3-animate-bottom">Пройти тестирование по теме "Государство"</span>
+            </div>
+        </div>
+
+        <!-- Slideshow next/previous buttons -->
+        <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+            <div class="w3-left" onclick="plusDivs(-1)"><img src="General_files/left.png" class="list"></div>
+            <div class="w3-right" onclick="plusDivs(1)"><img src="General_files/right.png" class="list">
+            </div>
+
+            <div class="w3-center">
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white w3-white"
+                      onclick="currentDiv(1)"></span>
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Сетка -->
+    <div class="w3-row w3-container">
+        <div class="w3-center w3-padding-64">
+            <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Нахуя этот сайт?</span>
+        </div>
+        <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16 one">
+            <h3>Дизайн</h3>
+            <p>Наш сайт отличается от многих отечественных ресурсов своим инструментарием, стоит только лишь попробовать
+                ;з</p>
+        </div>
+
+        <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16 two">
+            <h3>Информация</h3>
+            <p>Мы преподносим только достоверную информацию на основе научных работ, предоставленных в открытом
+                доступе.</p>
+        </div>
+
+        <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16 three">
+            <h3>Знания</h3>
+            <p>Наш ресурс способен расширить ваш кругозор в достаточно важной сфере нашей жизнедеятельности -
+                Политике!</p>
+        </div>
+
+        <div class="w3-col l3 m6 w3-black w3-container w3-padding-16 four">
+            <h3>Проверка</h3>
+            <p>Благодаря нашему сайту вы можете не только проверить свои знания и подчерпнуть для себя что-нибудь новое.
+                Дерзайте! ^^</p>
+        </div>
+    </div>
+
+    <!-- Сетка -->
+    <div class="w3-row-padding" id="about">
+        <div class="w3-center w3-padding-64">
+            <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Кто Мы</span>
+        </div>
+
+
+        <div class="w3-third w3-margin-bottom">
+            <div class="w3-card-4">
+                <img src="General_files/team1.jpg" alt="Mike" style="width:100%">
+                <div class="w3-container">
+                    <h3>Верболоз Егор</h3>
+                    <p class="w3-opacity">Разработчик HTML,JS,CSS</p>
+                    <p>Егор студент II курса направления Политология в Высшем учебном заведении ДВФУ, совместно с
+                        Анастасией занимался вёрсткой сайта</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+            <div class="w3-card-4">
+                <img src="General_files/team2.jpg" alt="Mike" style="width:100%">
+                <div class="w3-container">
+                    <h3>Турушева Анастасия</h3>
+                    <p class="w3-opacity">Разработчик HTML,JS,CSS</p>
+                    <p>Анастасия студентка I курса направления Прикладная математика и информатика в Высшем учебном
+                        заведении ДВФУ, совместно с Егором занималась вёрсткой сайта</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+            <div class="w3-card-4">
+                <img src="General_files/team3.jpg" alt="Jane" style="width:100%">
+                <div class="w3-container">
+                    <h3>Горюнов Михаил </h3>
+                    <p class="w3-opacity">Художественный Директор</p>
+                    <p>Михаил студент II курса направления Политология в Высшем учебном заведении ДВФУ, занимался
+                        поиском контента и исполнением художественной части сайта</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+            <div class="w3-card-4">
+                <img src="General_files/team4.jpg" alt="John" style="width:100%">
+                <div class="w3-container">
+                    <h3>Плошкин Александр </h3>
+                    <p class="w3-opacity">Контент-мейкер</p>
+                    <p>Александр студент II курса направления Политология в Высшем учебном заведении ДВФУ, занимался
+                        наполнением интернет-ресурса контентом</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Контакты -->
+    <div class="w3-center w3-padding-64" id="contact">
+        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Наши Контакты</span>
+        <div class="kontakt">
+            <a href="https://vk.com/existenz_y"><p>Горюнов Михаил Николаевич</p></a>
+            <a href="https://vk.com/id161427529"><p>Плошкин Александр Борисович</p></a>
+            <a href="https://vk.com/nyaeco"><p>Верболоз Егор Павлович</p></a>
+            <a href="https://vk.com/fogtars"><p>Турушева Анастасия Сергеевна</p></a>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- Подвал -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center" id="footer">
+    <a href="#" class="w3-button w3-black w3-margin"><img src="General_files/up.png" class="list">Наверх</a>
+</footer>
+
+
+<script>
+    // Слайд-шоу
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demodots");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-white";
+    }
+</script>
+
+</body>
+</html>
