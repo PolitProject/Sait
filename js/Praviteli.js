@@ -7,12 +7,12 @@
             _element = '#' + $element.attr('id'),
 
             defaults = {
-                checkAnswerText:  'Check My Answer!',
-                nextQuestionText: 'Next &raquo;',
+                checkAnswerText:  'Проверить мой ответ!',
+                nextQuestionText: 'Следующий вопрос &raquo;',
                 backButtonText: '',
                 completeQuizText: '',
                 tryAgainText: '',
-                questionCountText: 'Question %current of %total',
+                questionCountText: 'Вопрос %current из %total',
                 preventUnansweredText: 'You must select at least one answer.',
                 questionTemplateText:  '%count. %text',
                 scoreTemplateText: '%score / %total',
@@ -115,7 +115,7 @@
                 options.perQuestionResponseMessaging = options.disableResponseMessaging;
             }
             depMsg += 'The \'disableResponseMessaging\' option has been deprecated, please use' +
-                      ' \'perQuestionResponseMessaging\' and \'completionResponseMessaging\' in it\'s place.\n\n';
+                ' \'perQuestionResponseMessaging\' and \'completionResponseMessaging\' in it\'s place.\n\n';
         }
 
         if (options && typeof options.randomSort != 'undefined') {
@@ -126,7 +126,7 @@
                 options.randomSortAnswers = options.randomSort;
             }
             depMsg += 'The \'randomSort\' option has been deprecated, please use' +
-                      ' \'randomSortQuestions\' and \'randomSortAnswers\' in it\'s place.\n\n';
+                ' \'randomSortQuestions\' and \'randomSortAnswers\' in it\'s place.\n\n';
         }
 
         if (depMsg !== '') {
@@ -146,8 +146,8 @@
 
         // Get questions, possibly sorted randomly
         var questions = plugin.config.randomSortQuestions ?
-                        quizValues.questions.sort(function() { return (Math.round(Math.random())-0.5); }) :
-                        quizValues.questions;
+            quizValues.questions.sort(function() { return (Math.round(Math.random())-0.5); }) :
+            quizValues.questions;
 
         // Count the number of questions
         var questionCount = questions.length;
@@ -160,31 +160,31 @@
 
         // some special private/internal methods
         var internal = {method: {
-            // get a key whose notches are "resolved jQ deferred" objects; one per notch on the key
-            // think of the key as a house key with notches on it
-            getKey: function (notches) { // returns [], notches >= 1
-                var key = [];
-                for (i=0; i<notches; i++) key[i] = $.Deferred ();
-                return key;
-            },
+                // get a key whose notches are "resolved jQ deferred" objects; one per notch on the key
+                // think of the key as a house key with notches on it
+                getKey: function (notches) { // returns [], notches >= 1
+                    var key = [];
+                    for (i=0; i<notches; i++) key[i] = $.Deferred ();
+                    return key;
+                },
 
-            // put the key in the door, if all the notches pass then you can turn the key and "go"
-            turnKeyAndGo: function (key, go) { // key = [], go = function ()
-                // when all the notches of the key are accepted (resolved) then the key turns and the engine (callback/go) starts
-                $.when.apply (null, key). then (function () {
-                    go ();
-                });
-            },
+                // put the key in the door, if all the notches pass then you can turn the key and "go"
+                turnKeyAndGo: function (key, go) { // key = [], go = function ()
+                    // when all the notches of the key are accepted (resolved) then the key turns and the engine (callback/go) starts
+                    $.when.apply (null, key). then (function () {
+                        go ();
+                    });
+                },
 
-            // get one jQ
-            getKeyNotch: function (key, notch) { // notch >= 1, key = []
-                // key has several notches, numbered as 1, 2, 3, ... (no zero notch)
-                // we resolve and return the "jQ deferred" object at specified notch
-                return function () {
-                    key[notch-1].resolve (); // it is ASSUMED that you initiated the key with enough notches
-                };
-            }
-        }};
+                // get one jQ
+                getKeyNotch: function (key, notch) { // notch >= 1, key = []
+                    // key has several notches, numbered as 1, 2, 3, ... (no zero notch)
+                    // we resolve and return the "jQ deferred" object at specified notch
+                    return function () {
+                        key[notch-1].resolve (); // it is ASSUMED that you initiated the key with enough notches
+                    };
+                }
+            }};
 
         plugin.method = {
             // Sets up the questions and answers based on above array
@@ -265,11 +265,11 @@
                         for (i in answers) {
                             if (answers.hasOwnProperty(i)) {
                                 answer   = answers[i],
-                                optionId = inputName + '_' + i.toString();
+                                    optionId = inputName + '_' + i.toString();
 
                                 // If question has >1 true answers and is not a select any, use checkboxes; otherwise, radios
                                 var input = '<input id="' + optionId + '" name="' + inputName +
-                                            '" type="' + inputType + '" /> ';
+                                    '" type="' + inputType + '" /> ';
 
                                 var optionLabel = '<label for="' + optionId + '">' + answer.option + '</label>';
 
@@ -361,7 +361,7 @@
                 internal.method.turnKeyAndGo (key, options && options.callback ? options.callback : function () {});
 
                 if (plugin.config.events &&
-                        plugin.config.events.onStartQuiz) {
+                    plugin.config.events.onStartQuiz) {
                     plugin.config.events.onStartQuiz.apply (null, []);
                 }
             },
@@ -381,15 +381,15 @@
                     $(_element + ' ' + _answer).removeClass(correctResponseClass).removeClass(incorrectResponseClass);
 
                     $(_element + ' ' + _question          + ',' +
-                      _element + ' ' + _responses         + ',' +
-                      _element + ' ' + _response          + ',' +
-                      _element + ' ' + _nextQuestionBtn   + ',' +
-                      _element + ' ' + _prevQuestionBtn
+                        _element + ' ' + _responses         + ',' +
+                        _element + ' ' + _response          + ',' +
+                        _element + ' ' + _nextQuestionBtn   + ',' +
+                        _element + ' ' + _prevQuestionBtn
                     ).hide();
 
                     $(_element + ' ' + _questionCount + ',' +
-                      _element + ' ' + _answers + ',' +
-                      _element + ' ' + _checkAnswerBtn
+                        _element + ' ' + _answers + ',' +
+                        _element + ' ' + _checkAnswerBtn
                     ).show();
 
                     $quizArea.append($(_element + ' ' + _questions)).show();
@@ -549,7 +549,7 @@
                         }
                     });
 
-                // Back to previous question
+                    // Back to previous question
                 } else {
                     var prevQuestion = questionLI.prev(_question);
 
@@ -600,12 +600,17 @@
                     $(_quizLevel).remove()
                 } else {
                     var levels    = [
-                                        quizValues.info.level1, // 80-100%
-                                        quizValues.info.level2, // 60-79%
-                                        quizValues.info.level3, // 40-59%
-                                        quizValues.info.level4, // 20-39%
-                                        quizValues.info.level5  // 0-19%
-                                    ],
+                            quizValues.info.level1, // 91-100%
+                            quizValues.info.level2, // 85-90%
+                            quizValues.info.level3, // 79-84%
+                            quizValues.info.level4, // 68-78%
+                            quizValues.info.level5,  // 52-67%
+                            quizValues.info.level6, // 45-51%
+                            quizValues.info.level7,  // 35-44%
+                            quizValues.info.level8,  // 25-34%
+                            quizValues.info.level9,  // 15-24%
+                            quizValues.info.level10,  // 0-14%
+                        ],
                         levelRank = plugin.method.calculateLevel(score),
                         levelText = $.isNumeric(levelRank) ? levels[levelRank] : '';
 
@@ -627,7 +632,7 @@
                 internal.method.turnKeyAndGo (key, options && options.callback ? options.callback : function () {});
 
                 if (plugin.config.events &&
-                        plugin.config.events.onCompleteQuiz) {
+                    plugin.config.events.onCompleteQuiz) {
                     plugin.config.events.onCompleteQuiz.apply (null, [{
                         questionCount: questionCount,
                         score: score
@@ -650,15 +655,25 @@
                 var percent = (correctAnswers / questionCount).toFixed(2),
                     level   = null;
 
-                if (plugin.method.inRange(0, 0.20, percent)) {
+                if (plugin.method.inRange(0, 0.15, percent)) {
+                    level = 9;
+                } else if (plugin.method.inRange(0.16, 0.25, percent)) {
+                    level = 8;
+                } else if (plugin.method.inRange(0.26, 0.35, percent)) {
+                    level = 7;
+                } else if (plugin.method.inRange(0.36, 0.45, percent)) {
+                    level = 6;
+                } else if (plugin.method.inRange(0.46, 0.51, percent)) {
+                    level = 5;
+                } else if (plugin.method.inRange(0.52, 0.68, percent)) {
                     level = 4;
-                } else if (plugin.method.inRange(0.21, 0.40, percent)) {
+                } else if (plugin.method.inRange(0.69, 0.79, percent)) {
                     level = 3;
-                } else if (plugin.method.inRange(0.41, 0.60, percent)) {
+                } else if (plugin.method.inRange(0.80, 0.85, percent)) {
                     level = 2;
-                } else if (plugin.method.inRange(0.61, 0.80, percent)) {
+                } else if (plugin.method.inRange(0.86, 0.91, percent)) {
                     level = 1;
-                } else if (plugin.method.inRange(0.81, 1.00, percent)) {
+                } else if (plugin.method.inRange(0.92, 1.00, percent)) {
                     level = 0;
                 }
 
@@ -712,10 +727,10 @@
             var _qnid = $element.attr('id') + '-name';
             $quizName.attr('id', _qnid);
             $element.attr({
-              'aria-labelledby': _qnid,
-              'aria-live': 'polite',
-              'aria-relevant': 'additions',
-              'role': 'form'
+                'aria-labelledby': _qnid,
+                'aria-live': 'polite',
+                'aria-relevant': 'additions',
+                'role': 'form'
             });
             $(_quizStarter + ', [href = "#"]').attr('role', 'button');
         };
