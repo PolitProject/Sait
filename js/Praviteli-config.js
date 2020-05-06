@@ -2,129 +2,130 @@
 
 var quizJSON = {
     "info": {
-        "name":    "Проверьте свои знания!",
-        "main":    "<p>Think you're smart enough to be on Jeopardy? Find out with this super crazy knowledge quiz!</p>",
-        "results": "<h5>Learn More</h5><p>Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>",
-        "level1":  "Jeopardy Ready",
-        "level2":  "Jeopardy Contender",
-        "level3":  "Jeopardy Amateur",
-        "level4":  "Jeopardy Newb",
-        "level5":  "Stay in school, kid...",
-        "level6":  "Stay in school, kid...",
-        "level7":  "Stay in school, kid...",
-        "level8":  "Stay in school, kid...",
-        "level9":  "Stay in school, kid...",
-        "level10":  "rty"
+        "name": "Проверьте свои знания!",
+        "main": "<p>Думаете, что вы хорошо знаете правителей России? Проверьте свои знания в этой викторине!</p>",
+        "results": "<h5>Узнайте больше</h5><p>Россия государство с многолетней историей, а следовательно у нас было и много правителей. Надеемся, что после проверки своих знаний, вы не остановитесь на этом и будете и дальше познавать историю нашего великого Отечества ;з</p>",
+        "level1": "Отличные знания",
+        "level2": "Хорошие знания",
+        "level3": "Хорошие знания",
+        "level4": "Нормальные знания",
+        "level5": "Нормальные знания",
+        "level6": "Плохие знания",
+        "level7": "Плохие знания",
+        "level8": "Ужасные знания",
+        "level9": "Ужасные знания",
+        "level10": "Ужасные знания"
     },
     "questions": [
         { // Question 1
-            "q": "What number is the letter A in the English alphabet?",
+            "q": "«Устав.-о Наследии престола» отменявший передачу престола прямым потомкам по мужской линии и предусматривавший назначение на престол наследника по воле монарха был принят...",
             "a": [
-                {"option": "8",      "correct": false},
-                {"option": "14",     "correct": false},
-                {"option": "1",      "correct": true},
-                {"option": "23",     "correct": false} // no comma here
+                {"option": "Иван Грозный", "correct": false},
+                {"option": "Павел I", "correct": true},
+                {"option": "Борис Годунов", "correct": false},
+                {"option": "Александр I", "correct": false} // no comma here
             ],
-            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+            "correct": "<p><span>Верно!</span> У вас хорошие знания :з</p>",
+            "incorrect": "<p><span>О нет.</span> Для правильного ответа вам стоит лучше подготовиться</p>" // no comma here
         },
         { // Question 2
-            "q": "What number is the letter A in the English alphabet?",
+            "q": "Прозвище «Собирателя земли русской» принадлежит ...",
             "a": [
-                {"option": "8",      "correct": false},
-                {"option": "14",     "correct": false},
-                {"option": "1",      "correct": true},
-                {"option": "23",     "correct": false} // no comma here
+                {"option": "Алексею Михайловичу ", "correct": false},
+                {"option": "Ивану Д. Калите ", "correct": false},
+                {"option": "Василию Шуйскому", "correct": false},
+                {"option": "Ивану III", "correct": true}// no comma here
             ],
-            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+            "correct": "<p><span>Верно!</span> У вас хорошие знания :з</p>",
+            "incorrect": "<p><span>О нет.</span> Для правильного ответа вам стоит лучше подготовиться</p>" // no comma here
         },
         { // Question 3
-            "q": "What number is the letter A in the English alphabet?",
+            "q": "Теория «официальной народности» была разработана при ...",
             "a": [
-                {"option": "8",      "correct": false},
-                {"option": "14",     "correct": false},
-                {"option": "1",      "correct": true},
-                {"option": "23",     "correct": false} // no comma here
+                {"option": "Николае I ", "correct": true},
+                {"option": "Александре III", "correct": false},
+                {"option": "Екатерине II ", "correct": false},
+                {"option": "Александре II", "correct": false} // no comma here
             ],
-            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+            "correct": "<p><span>Верно!</span> У вас хорошие знания :з</p>",
+            "incorrect": "<p><span>О нет.</span> Для правильного ответа вам стоит лучше подготовиться</p>" // no comma here
         },
         { // Question 4
-            "q": "What number is the letter A in the English alphabet?",
+            "q": "Главной своей заслугой этот человек считал то, что смена власти при нем прошла «бескровно»",
             "a": [
-                {"option": "8",      "correct": false},
-                {"option": "14",     "correct": false},
-                {"option": "1",      "correct": true},
-                {"option": "23",     "correct": false} // no comma here
+                {"option": "Константин Черненко", "correct": false},
+                {"option": "Юрий Андропов", "correct": false},
+                {"option": "Никита Хрущёв", "correct": true},
+                {"option": "Михаил Горбачёв", "correct": false} // no comma here
             ],
-            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+            "correct": "<p><span>Верно!</span> У вас хорошие знания :з</p>",
+            "incorrect": "<p><span>О нет.</span> Для правильного ответа вам стоит лучше подготовиться</p>" // no comma here
         },
         { // Question 5
-            "q": "What number is the letter A in the English alphabet?",
+            "q": "Бертран Рассел однажды сказал: «... Наш век войдет в историю веком (.....) и Эйнштейна, которым удалось завершить огромную работу синтеза, одному - в области мысли, другому - в действии.» о ком идёт речь? ",
             "a": [
-                {"option": "8",      "correct": false},
-                {"option": "14",     "correct": false},
-                {"option": "1",      "correct": true},
-                {"option": "23",     "correct": false} // no comma here
+                {"option": "Лев Троцкий ", "correct": false},
+                {"option": "Адольф Гитлер", "correct": false},
+                {"option": "Владимир Ленин", "correct": true},
+                {"option": "Иосиф Сталин", "correct": false} // no comma here
             ],
-            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+            "correct": "<p><span>Верно!</span> У вас хорошие знания :з</p>",
+            "incorrect": "<p><span>О нет.</span> Для правильного ответа вам стоит лучше подготовиться</p>" // no comma here
         },
         { // Question 6
-            "q": "What number is the letter A in the English alphabet?",
+            "q": "Назовите автора данных слов: «Истекший год был годом великого перелома на всех фронтах социалистического строительства. Перелом этот шел и продолжает идти под знаком решительного наступления социализма на капиталистические элементы города и деревни»",
             "a": [
-                {"option": "8",      "correct": false},
-                {"option": "14",     "correct": false},
-                {"option": "1",      "correct": true},
-                {"option": "23",     "correct": false} // no comma here
+                {"option": "Владимир Ленин ", "correct": false},
+                {"option": "Иосиф Сталин", "correct": true},
+                {"option": "Никита Хрущёв", "correct": false},
+                {"option": "Георгий Маленков", "correct": false} // no comma here
             ],
-            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+            "correct": "<p><span>Верно!</span> У вас хорошие знания :з</p>",
+            "incorrect": "<p><span>О нет.</span> Для правильного ответа вам стоит лучше подготовиться</p>" // no comma here
         },
         { // Question 7
-            "q": "Which of the following best represents your preferred breakfast?",
+            "q": "Формально в истории России наибольший срок правления имел(а)",
             "a": [
-                {"option": "Bacon and eggs",               "correct": false},
-                {"option": "Fruit, oatmeal, and yogurt",   "correct": true},
-                {"option": "Leftover pizza",               "correct": false},
-                {"option": "Eggs, fruit, toast, and milk", "correct": true} // no comma here
+                {"option": "Екатерина II", "correct": false},
+                {"option": "Пётр I", "correct": false},
+                {"option": "Иосиф Сталин", "correct": false},
+                {"option": "Иван Грозный", "correct": true} // no comma here
             ],
-            "select_any": true,
-            "correct": "<p><span>Nice!</span> Your cholestoral level is probably doing alright.</p>",
-            "incorrect": "<p><span>Hmmm.</span> You might want to reconsider your options.</p>" // no comma here
+            "correct": "<p><span>Верно!</span> У вас хорошие знания :з</p>",
+            "incorrect": "<p><span>О нет.</span> Для правильного ответа вам стоит лучше подготовиться</p>" // no comma here
         },
         { // Question 8
-            "q": "Where are you right now? Select ALL that apply.",
+            "q": "Кто из указанных личностей объявил о том, что коммунизм будет построен в России к 1980-ому году?",
             "a": [
-                {"option": "Planet Earth",           "correct": true},
-                {"option": "Pluto",                  "correct": false},
-                {"option": "At a computing device",  "correct": true},
-                {"option": "The Milky Way",          "correct": true} // no comma here
+                {"option": "Иосиф Сталин", "correct": false},
+                {"option": "Никита Хрущев", "correct": true},
+                {"option": "Михаил Горбачёв", "correct": false},
+                {"option": "Владимир Ленин", "correct": false} // no comma here
             ],
-            "correct": "<p><span>Brilliant!</span> You're seriously a genius, (wo)man.</p>",
-            "incorrect": "<p><span>Not Quite.</span> You're actually on Planet Earth, in The Milky Way, At a computer. But nice try.</p>" // no comma here
+            "correct": "<p><span>Верно!</span> У вас хорошие знания :з</p>",
+            "incorrect": "<p><span>О нет.</span> Для правильного ответа вам стоит лучше подготовиться</p>" // no comma here
         },
         { // Question 9
-            "q": "How many inches of rain does Michigan get on average per year?",
+            "q": "Кому свой престол завещала императрица Елизавета Петровна",
             "a": [
-                {"option": "149",    "correct": false},
-                {"option": "32",     "correct": true},
-                {"option": "3",      "correct": false},
-                {"option": "1291",   "correct": false} // no comma here
+                {"option": "Пётр II", "correct": true},
+                {"option": "Пётр III", "correct": false},
+                {"option": "Павел I", "correct": false},
+                {"option": "Екатерина II", "correct": false} // no comma here
             ],
-            "correct": "<p><span>Holy bananas!</span> I didn't actually expect you to know that! Correct!</p>",
-            "incorrect": "<p><span>Fail.</span> Sorry. You lose. It actually rains approximately 32 inches a year in Michigan.</p>" // no comma here
+            "correct": "<p><span>Верно!</span> У вас хорошие знания :з</p>",
+            "incorrect": "<p><span>О нет.</span> Для правильного ответа вам стоит лучше подготовиться</p>" // no comma here
         },
         { // Question 10
-            "q": "Is Earth bigger than a basketball?",
+            "q": "Время правления этого монарха ознаменовалось таким явлением как «Бироновщина»",
             "a": [
-                {"option": "Yes",    "correct": true},
-                {"option": "No",     "correct": false} // no comma here
+                {"option": "Иван VI", "correct": false},
+                {"option": "Елизавета Петровна", "correct": false},
+                {"option": "Анна Иоанновна", "correct": true},
+                {"option": "Пётр III", "correct": false} // no comma here
             ],
-            "correct": "<p><span>Good Job!</span> You must be very observant!</p>",
-            "incorrect": "<p><span>ERRRR!</span> What planet Earth are <em>you</em> living on?!?</p>" // no comma here
-        } // no comma here
+            "correct": "<p><span>Верно!</span> У вас хорошие знания :з</p>",
+            "incorrect": "<p><span>О нет.</span> Для правильного ответа вам стоит лучше подготовиться</p>" // no comma here
+        },
     ]
 };
